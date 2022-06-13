@@ -23,7 +23,8 @@
     "dev": "run-p watch serve",
     "http": "http-server -c-1 -p 8000 . ",
     "docs": "node scripts/docs.js && yarn format:docs",
-    "format:docs": "prettier --write '**/*.md'"
+    "format:docs": "prettier --write '**/*.md'",
+    "prepack": "rollup -c scripts/rollup.js --silent"
   },
   "prettier": {
     "tabWidth": 2,
